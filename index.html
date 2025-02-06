@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vera's Color Guessing Game</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Color Guessing Game</h1>
+        
+      <!-- Game Status -->
+      <p id="gameStatus" data-testid="gameStatus"></p>
+
+      <!-- Score Display -->
+      <h2 id="score" data-testid="score">Score: 0</h2>
+      
+      <!-- Target color Display -->
+      <div id="colorBox" data-testid="colorBox"></div>
+
+      <!-- Game Intructions -->
+      <h3 id="gameInstructions" data-testid="gameInstructions">
+        Guess the correct color!
+      </h3>
+
+      <!-- Color Options -->
+      <section id="colorOptions">
+        <button class="colorOption" data-testid="colorOption"></button>
+        <button class="colorOption" data-testid="colorOption"></button>
+        <button class="colorOption" data-testid="colorOption"></button>
+        <button class="colorOption" data-testid="colorOption"></button>
+        <button class="colorOption" data-testid="colorOption"></button>
+        <button class="colorOption" data-testid="colorOption"></button>
+      </section>
+
+      <!-- Reset Game Button -->
+      <button id="newGameButton" data-testid="newGameButton">RESET</button>
+    </section>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
