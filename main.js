@@ -39,28 +39,29 @@ function shuffleArray(array) {
 function checkGuess(event) {
     const selectedColor = event.target.dataset.color;
 
+    gameStatus.classList.remove("correct", "wrong"); // Remove previous animation classes
+
     //  Reveal the correct color temporarily
     colorBox.style.backgroundColor = targetColor;
 
     if (selectedColor === targetColor) {
         gameStatus.textContent = "Correct!";
-        gameStatus.style.color = "green";
+        gameStatus.classList.add("correct"); // Apply pop effect
         score++; // Increase score on correct guess
 
-        setTimeout(startNewGame, 1000) // start new round after 0.5 second
+        setTimeout(startNewGame, 2000) // start new round after 1 second
     }else {
         gameStatus.textContent = `Wrong, the right guess is ${targetColor}!`;
-        gameStatus.style.color = "red";
-
+        gameStatus.classList.add("wrong");
         if (score > 0) {
             score--; // Decrease score only if it is greater than 0
         }
         
-        //After 0.5s, reset colorBox to grey for a  new guess
+        //After 1s, reset colorBox to grey for a  new guess
         setTimeout(() => {
             colorBox.style.backgroundColor = 'grey';
             gameStatus.textContent = ""; // clear the error message
-        }, 500);
+        }, 2000);
     }
 
     // shuffle buttons on wrong guess
