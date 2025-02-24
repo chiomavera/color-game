@@ -1,4 +1,5 @@
 const colorBox = document.getElementById("colorBox");
+// const question = document.getElementById("fa-question")
 const colorOptions = document.querySelectorAll(".colorOption");
 const gameStatus = document.getElementById("gameStatus");
 const scoreDisplay = document.getElementById("score");
@@ -14,7 +15,7 @@ function startNewGame() {
   targetColor = colors[Math.floor(Math.random() * colors.length)];
 
   // hide the target color (set it to grey or white)
-  colorBox.style.backgroundColor = "grey";
+  colorBox.style.backgroundColor = "transparent";
 
   // Shuffle colors for buttons using Fisher-Yates shuffle
   const shuffledColors = shuffleArray([...colors]);
@@ -59,7 +60,7 @@ function checkGuess(event) {
         
         //After 1s, reset colorBox to grey for a  new guess
         setTimeout(() => {
-            colorBox.style.backgroundColor = 'grey';
+            colorBox.style.backgroundColor = 'transparent';
             gameStatus.textContent = ""; // clear the error message
         }, 2000);
     }
