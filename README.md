@@ -59,12 +59,6 @@ The **GuessTheColor** game is a fun and interactive game where players try to ma
 - Include **colorblind-friendly mode** for accessibility.
 - Store **high scores** using local storage.
 
-## 🤝 Contributing
-Want to improve this game? Feel free to fork the repository and submit a pull request!
-
-## 📜 License
-This project is open-source under the **MIT License**.
-
 ---
 Enjoy the game! 🎨🎮
 
