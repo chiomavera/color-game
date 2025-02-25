@@ -3,6 +3,8 @@
 ## 🎨 Overview
 The **GuessTheColor** game is a fun and interactive game where players try to match a randomly selected target color with one of six options. It tests color recognition skills and adds a touch of excitement with animations and score tracking.
 
+🔗 Play the Game Here: [GuessTheColor](https://guessthecolor-game.netlify.app/)
+
 ## 🛠 Features
 - Displays a randomly chosen color as the **target color**.
 - Provides **six color options** for the player to choose from.
